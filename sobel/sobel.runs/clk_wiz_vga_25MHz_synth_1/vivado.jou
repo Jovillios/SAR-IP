@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Tue May  4 08:49:53 2021
+# Process ID: 5401
+# Current directory: /homes/abaghdad/SAR_info_ip/2021/sobel/sobel.runs/clk_wiz_vga_25MHz_synth_1
+# Command line: vivado -log clk_wiz_vga_25MHz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_vga_25MHz.tcl
+# Log file: /homes/abaghdad/SAR_info_ip/2021/sobel/sobel.runs/clk_wiz_vga_25MHz_synth_1/clk_wiz_vga_25MHz.vds
+# Journal file: /homes/abaghdad/SAR_info_ip/2021/sobel/sobel.runs/clk_wiz_vga_25MHz_synth_1/vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_vga_25MHz.tcl -notrace

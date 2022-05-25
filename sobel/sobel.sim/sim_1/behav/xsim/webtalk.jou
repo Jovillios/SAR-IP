@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Wed May 18 16:35:31 2022
+# Process ID: 59094
+# Current directory: /homes/j21decae/SAR/sobel/sobel.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /homes/j21decae/SAR/sobel/sobel.sim/sim_1/behav/xsim/xsim.dir/tb_operativeUnit_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /homes/j21decae/SAR/sobel/sobel.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /homes/j21decae/SAR/sobel/sobel.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /homes/j21decae/SAR/sobel/sobel.sim/sim_1/behav/xsim/xsim.dir/tb_operativeUnit_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+| Date         : Tue May  4 08:49:38 2021
+| Host         : pc-df-290 running 64-bit Ubuntu 20.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_vga_25MHz'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_wiz_vga_25MHz (xilinx.com:ip:clk_wiz:6.0) to (Rev. 4)
+

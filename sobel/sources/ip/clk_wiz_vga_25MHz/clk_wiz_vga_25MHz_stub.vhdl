@@ -1,0 +1,30 @@
+-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+-- Date        : Tue May  4 08:50:58 2021
+-- Host        : pc-df-290 running 64-bit Ubuntu 20.04.2 LTS
+-- Command     : write_vhdl -force -mode synth_stub
+--               /homes/abaghdad/SAR_info_ip/2021/sobel/sources/ip/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz_stub.vhdl
+-- Design      : clk_wiz_vga_25MHz
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7a100tcsg324-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity clk_wiz_vga_25MHz is
+  Port ( 
+    clk_out1 : out STD_LOGIC;
+    locked : out STD_LOGIC;
+    clk_in1 : in STD_LOGIC
+  );
+
+end clk_wiz_vga_25MHz;
+
+architecture stub of clk_wiz_vga_25MHz is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "clk_out1,locked,clk_in1";
+begin
+end;

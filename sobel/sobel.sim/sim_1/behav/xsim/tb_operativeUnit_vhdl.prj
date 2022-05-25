@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/gradientUnit.vhd" \
+"../../../../sources/regUnit.vhd" \
+"../../../../sources/pixedgeReg.vhd" \
+"../../../../sobel.srcs/sources_1/imports/sources/operativeUnit.vhd" \
+"../../../../sources/tb_operativeUnit.vhd" \
+
+# Do not sort compile order
+nosort

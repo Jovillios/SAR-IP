@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_operativeUnit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_operativeUnit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="188700fs"></ZoomStartTime>
+      <ZoomEndTime time="196021fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/I_pixel">
+      <obj_property name="ElementShortName">I_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">I_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/I_ldPix11">
+      <obj_property name="ElementShortName">I_ldPix11</obj_property>
+      <obj_property name="ObjectShortName">I_ldPix11</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/I_ldPix21">
+      <obj_property name="ElementShortName">I_ldPix21</obj_property>
+      <obj_property name="ObjectShortName">I_ldPix21</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/I_ldPix31">
+      <obj_property name="ElementShortName">I_ldPix31</obj_property>
+      <obj_property name="ObjectShortName">I_ldPix31</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/I_shReg">
+      <obj_property name="ElementShortName">I_shReg</obj_property>
+      <obj_property name="ObjectShortName">I_shReg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/I_ldPixEdge">
+      <obj_property name="ElementShortName">I_ldPixEdge</obj_property>
+      <obj_property name="ObjectShortName">I_ldPixEdge</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_operativeUnit/operativeUnit_1/O_pixEdge">
+      <obj_property name="ElementShortName">O_pixEdge</obj_property>
+      <obj_property name="ObjectShortName">O_pixEdge</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix11">
+      <obj_property name="ElementShortName">O_Pix11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix11[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix12">
+      <obj_property name="ElementShortName">O_Pix12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix12[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix13">
+      <obj_property name="ElementShortName">O_Pix13[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix13[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix21">
+      <obj_property name="ElementShortName">O_Pix21[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix21[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix22">
+      <obj_property name="ElementShortName">O_Pix22[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix22[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix23">
+      <obj_property name="ElementShortName">O_Pix23[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix23[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix31">
+      <obj_property name="ElementShortName">O_Pix31[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix31[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix32">
+      <obj_property name="ElementShortName">O_Pix32[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix32[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/regUnit_1/O_Pix33">
+      <obj_property name="ElementShortName">O_Pix33[7:0]</obj_property>
+      <obj_property name="ObjectShortName">O_Pix33[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/gradientUnit_1/Gh">
+      <obj_property name="ElementShortName">Gh[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Gh[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/gradientUnit_1/Gv">
+      <obj_property name="ElementShortName">Gv[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Gv[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_operativeUnit/operativeUnit_1/gradientUnit_1/Sum">
+      <obj_property name="ElementShortName">Sum[10:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

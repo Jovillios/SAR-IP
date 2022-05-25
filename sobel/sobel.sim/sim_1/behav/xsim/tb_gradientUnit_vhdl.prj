@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/gradientUnit.vhd" \
+"../../../../sources/tb_gradientUnit.vhd" \
+
+# Do not sort compile order
+nosort
