@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/adrgenUnit.vhd" \
+"../../../../sources/tb_adrgenUnit.vhd" \
+
+# Do not sort compile order
+nosort
