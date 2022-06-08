@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/automate.vhd" \
+"../../../../sources/tb_automate.vhd" \
+
+# Do not sort compile order
+nosort

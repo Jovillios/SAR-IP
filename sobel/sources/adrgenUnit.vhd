@@ -56,6 +56,9 @@ begin
                     O_EndImage <= '1';
                 else
                     PtrLine <= PtrLine + 1;
+                    PtrCol <= "00000000000000";
+                    O_NewLine <= '0';
+                    
                 end if;
             end if;
                 
@@ -79,19 +82,21 @@ begin
             elsif (I_selPix = "10") then
                 O_ADR_R <= std_logic_vector(Adr + to_unsigned(200,14));
             end if;
+       
             
+
+        end if;
+        
             Adr <= PtrCol;
             Adr_bis <= (to_unsigned(100,7)*PtrLine);
             Adr_ter <= Adr + Adr_bis;
             
             O_ADR_W <= std_logic_vector(Adr_ter + to_unsigned(99,14));
-            
-
-        end if;
         
     end process;
 
-    
-    
+
+
+
 end Behavioral;
 

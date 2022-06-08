@@ -1,4 +1,6 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'adrgenUnit'
-INFO: [VRFC 10-163] Analyzing VHDL file "/homes/t21khieu/SAR/sobel/sources/tb_adrgenUnit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_adrgenUnit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sobelProc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/homes/t21khieu/SAR/sobel/sources/tb_sobelProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_sobelProc'

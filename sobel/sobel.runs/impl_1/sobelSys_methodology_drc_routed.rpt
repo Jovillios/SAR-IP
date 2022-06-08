@@ -1,0 +1,56 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+| Date         : Wed Jun  8 14:54:29 2022
+| Host         : fl-tp-br-429 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_methodology -file sobelSys_methodology_drc_routed.rpt -pb sobelSys_methodology_drc_routed.pb -rpx sobelSys_methodology_drc_routed.rpx
+| Design       : sobelSys
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+--------------------------------------------------------+------------+
+| Rule     | Severity | Description                                            | Violations |
++----------+----------+--------------------------------------------------------+------------+
+| SYNTH-16 | Warning  | Address collision                                      | 1          |
+| XDCC-1   | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7   | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-16#1 Warning
+Address collision  
+Block RAM ram_out/RAM_reg_2 may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk_i [get_ports clk_i] (Source: /homes/t21khieu/SAR/sobel/sources/Nexys4_Sobel.xdc (Line: 106))
+Previous: create_clock -period 10.000 [get_ports clk_i] (Source: /homes/t21khieu/SAR/sobel/sources/ip/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk_i [get_ports clk_i] (Source: /homes/t21khieu/SAR/sobel/sources/Nexys4_Sobel.xdc (Line: 106))
+Previous: create_clock -period 10.000 [get_ports clk_i] (Source: /homes/t21khieu/SAR/sobel/sources/ip/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz.xdc (Line: 56))
+Related violations: <none>
+
+

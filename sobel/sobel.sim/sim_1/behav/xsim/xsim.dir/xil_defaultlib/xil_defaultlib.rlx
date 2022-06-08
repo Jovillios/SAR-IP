@@ -3,5 +3,15 @@
 Oct 24 2019
 18:48:46
 /homes/t21khieu/SAR/sobel/sobel.sim/sim_1/behav/xsim/glbl.v,1653479938,verilog,,,,glbl,,,,,,,,
-/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd,1653486677,vhdl,/homes/t21khieu/SAR/sobel/sources/tb_adrgenUnit.vhd,,,adrgenunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sobel.srcs/sources_1/imports/sources/operativeUnit.vhd,1653479939,vhdl,/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd,,,operativeunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd,1654692611,vhdl,/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd,,,adrgenunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/automate.vhd,1654087158,vhdl,/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd,,,automate,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/gradientUnit.vhd,1653479939,vhdl,/homes/t21khieu/SAR/sobel/sobel.srcs/sources_1/imports/sources/operativeUnit.vhd,,,gradientunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/pixedgeReg.vhd,1653479939,vhdl,/homes/t21khieu/SAR/sobel/sobel.srcs/sources_1/imports/sources/operativeUnit.vhd,,,pixedgereg,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/regUnit.vhd,1653479939,vhdl,/homes/t21khieu/SAR/sobel/sobel.srcs/sources_1/imports/sources/operativeUnit.vhd,,,regunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd,1653479939,vhdl,/homes/t21khieu/SAR/sobel/sources/tb_sobelProc.vhd,,,sobelproc,,,,,,,,
 /homes/t21khieu/SAR/sobel/sources/tb_adrgenUnit.vhd,1653479939,vhdl,,,,tb_adrgenunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/tb_automate.vhd,1653479939,vhdl,,,,tb_automate,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/tb_operativeUnit.vhd,1653479939,vhdl,,,,tb_operativeunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/tb_regUnit.vhd,1653479939,vhdl,,,,tb_regunit,,,,,,,,
+/homes/t21khieu/SAR/sobel/sources/tb_sobelProc.vhd,1653479939,vhdl,,,,tb_sobelproc,,,,,,,,

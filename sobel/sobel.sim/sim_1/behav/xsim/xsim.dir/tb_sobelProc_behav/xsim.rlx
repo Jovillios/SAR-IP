@@ -1,0 +1,12 @@
+
+{ 
+    crc :  1480783247897159587  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 6737922d63e140f3b9b38e0796d63452 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot tb_sobelProc_behav xil_defaultlib.tb_sobelProc" , 
+    buildDate : "Oct 24 2019" , 
+    buildTime : "18:48:46" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_sobelProc_behav/xsimk\"   \"xsim.dir/tb_sobelProc_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_sobelProc_behav/obj/xsim_1.lnx64.o\" -L\"/usr/home/enstb1/Xilinx/Vivado2019.2/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

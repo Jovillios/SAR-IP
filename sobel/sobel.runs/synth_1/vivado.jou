@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Wed Jun  8 14:51:40 2022
+# Process ID: 41380
+# Current directory: /homes/t21khieu/SAR/sobel/sobel.runs/synth_1
+# Command line: vivado -log sobelSys.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sobelSys.tcl
+# Log file: /homes/t21khieu/SAR/sobel/sobel.runs/synth_1/sobelSys.vds
+# Journal file: /homes/t21khieu/SAR/sobel/sobel.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sobelSys.tcl -notrace

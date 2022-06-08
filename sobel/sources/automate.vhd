@@ -9,22 +9,22 @@ entity automate is
 		   I_go	   		 : in STD_LOGIC;
 		   I_EndImage	 : in STD_LOGIC;
 		   I_NewLine	 : in STD_LOGIC;
-		   -- signaux de commandes vers l'unité opérative
+		   -- signaux de commandes vers l'unitï¿½ opï¿½rative
            O_ldPix11 	 : out  STD_LOGIC;
            O_ldPix21 	 : out  STD_LOGIC;
            O_ldPix31 	 : out  STD_LOGIC;
            O_shReg 		 : out  STD_LOGIC;
 		   O_ldPixEdge 	 : out STD_LOGIC;
-		   -- signaux de commandes vers le générateur d'adresses		   
+		   -- signaux de commandes vers le gï¿½nï¿½rateur d'adresses		   
 		   O_clr_PtrLine : out STD_LOGIC;
 		   O_inc_PtrLine : out STD_LOGIC;
 		   O_clr_PtrCol  : out STD_LOGIC;
 		   O_inc_PtrCol  : out STD_LOGIC;
 		   O_selPix 	 : out STD_LOGIC_VECTOR (1 downto 0);		   
-		   -- signaux de commandes vers les mémoires		   
+		   -- signaux de commandes vers les mï¿½moires		   
 		   O_enM_R		 : out STD_LOGIC;
 		   O_enM_W		 : out STD_LOGIC;
-		   -- signal de commande vers le contrôleur VGA		   		   
+		   -- signal de commande vers le contrï¿½leur VGA		   		   
 		   O_StartDisplay  : out STD_LOGIC		   
 		   ); 
 end automate;
@@ -33,7 +33,7 @@ end automate;
 
 architecture Behavioral of automate is
 
--- définir un type énuméré avec les états de la FSM et deux signaux de ce type
+-- dï¿½finir un type ï¿½numï¿½rï¿½ avec les ï¿½tats de la FSM et deux signaux de ce type
 type automate_state_type is (Idle, Init, Pix1, Pix2, Pix3, sh1, Pix4, Pix5, 
 							 Pix6, sh2, Pix7, Pix8, Pix9, Exec, OutEdge, 
 							 sh3, EndSobel);
@@ -41,8 +41,8 @@ signal current_state, next_state : automate_state_type := Idle;
   
 begin
 
--- Le registre d'état
-state_reg: process(_BLANK_TO_FILL_)
+-- Le registre d'ï¿½tat
+state_reg: process(clk, reset)
 begin
 	if (reset='1') then  				-- asynchronous reset (active high)
         current_state <= Idle;
@@ -52,8 +52,8 @@ begin
 end process state_reg;
 
 	
--- Calcul de l'état suivant et des sorties
-comb_logic: process(_BLANK_TO_FILL_)
+-- Calcul de l'ï¿½tat suivant et des sorties
+comb_logic: process(current_state,I_go,I_EndImage,I_NewLine)
 begin
 	-- initialisation de TOUTES les sorties
     O_ldPix11		<= '0';
@@ -74,11 +74,11 @@ begin
 	case current_state is
 
 		when Idle =>			
-				-- calcul des sorties SPECIFIQUES à l'état
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
 				O_clr_PtrLine	<= I_go;
 				O_clr_PtrCol	<= I_go;
 				
-				-- calcul de l'état suivant
+				-- calcul de l'ï¿½tat suivant
 				if(I_go = '1') then
 					next_state	<= Init;
 				else
@@ -86,20 +86,20 @@ begin
 				end if;
 
 		when Init =>			
-				-- calcul des sorties SPECIFIQUES à l'état
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
 				O_enM_R		<= '1';
 				O_selPix	<= "00";
 				
-				-- calcul de l'état suivant
+				-- calcul de l'ï¿½tat suivant
 				next_state	<= Pix1;
 
 		when Pix1 =>			
-				-- calcul des sorties SPECIFIQUES à l'état
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
 				O_ldPix11	<= '1';
 				O_enM_R		<= '1';
 				O_selPix	<= "01";
 				
-				-- calcul de l'état suivant
+				-- calcul de l'ï¿½tat suivant
 				if(I_EndImage = '0') then
 					next_state	<= Pix2;
 				else
@@ -107,25 +107,113 @@ begin
 				end if;
 				
 		when Pix2 => 
-				-- calcul des sorties SPECIFIQUES à l'état
-				__BLANK_TO_FILL__
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix21	<= '1';
+				O_enM_R		<= '1';
+				O_selPix	<= "10";
 				
-				-- calcul de l'état suivant
-				next_state	<= __BLANK_TO_FILL__	
+				-- calcul de l'Ã©tat suivant
+				next_state <= Pix3;
+		when Pix3 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix31	<= '1';
+				O_inc_PtrCol <= '1';
+								
+				-- calcul de l'Ã©tat suivant
+				next_state <= sh1;
+				
+		when sh1 =>
+		      
+		      O_shReg <= '1';
+		      O_enM_R <= '1';
+		      O_selPix <= "00";
+	
+	          next_state <= Pix4;
+	          
+        when Pix4 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix11	<= '1';
+				O_enM_R		<= '1';
+				O_selPix	<= "01";
+				
+				-- calcul de l'Ã©tat suivant
+				next_state <= Pix5;
+				
+		when Pix5 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix21	<= '1';
+				O_enM_R		<= '1';
+				O_selPix	<= "10";
+				
+				-- calcul de l'Ã©tat suivant
+				next_state <= Pix6;
+				
+		when Pix6 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix31	<= '1';
+				O_inc_PtrCol <= '1';
+								
+				-- calcul de l'Ã©tat suivant
+				next_state <= sh2;		
 		
+		when sh2 =>
+		      
+		      O_shReg <= '1';
+		      O_enM_R <= '1';
+		      O_selPix <= "00";
+	
+	          next_state <= Pix7;
 
-		
-		
+        when Pix7 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix11	<= '1';
+				O_enM_R		<= '1';
+				O_selPix	<= "01";
+				
+				-- calcul de l'Ã©tat suivant
+				next_state <= Pix8;
+				
+		when Pix8 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix21	<= '1';
+				O_enM_R		<= '1';
+				O_selPix	<= "10";
+				
+				-- calcul de l'Ã©tat suivant
+				next_state <= Pix9;
 
-		
-		
-		__BLANK_TO_FILL__
-			
-
-
-
-			
-			
+		when Pix9 => 
+				-- calcul des sorties SPECIFIQUES ï¿½ l'ï¿½tat
+				O_ldPix31	<= '1';
+				O_inc_PtrCol <= '1';
+								
+				-- calcul de l'Ã©tat suivant
+				next_state <= Exec;	
+				
+		when Exec =>
+		          O_ldPixEdge <= '1';
+		          next_state <= OutEdge;
+		when OutEdge =>
+		          O_enM_W <= '1';
+		          next_state <= sh3;
+		          
+		when sh3 =>
+		      
+		      O_shReg <= '1';
+		      O_enM_R <= '1';
+		      O_selPix <= "00";
+	          if (I_NewLine = '1') then
+	               O_inc_PtrLine <= '1';
+	               next_state <= Pix1;
+	          else
+	               O_inc_PtrLine <= '0';
+	               next_state <= Pix7;
+	          end if;
+	          
+	    when EndSobel =>
+	           O_StartDisplay <= '1';
+	           next_state <= EndSobel;
+	           
 	    when others =>	
 				next_state	<= Idle;
 	end case;

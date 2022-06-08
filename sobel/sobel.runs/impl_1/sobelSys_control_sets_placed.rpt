@@ -1,0 +1,92 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+| Date         : Wed Jun  8 14:54:08 2022
+| Host         : fl-tp-br-429 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_control_sets -verbose -file sobelSys_control_sets_placed.rpt
+| Design       : sobelSys
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    23 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     5 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |            7 |
+| No           | No                    | Yes                    |              20 |            9 |
+| No           | Yes                   | No                     |              12 |            3 |
+| Yes          | No                    | No                     |              14 |            4 |
+| Yes          | No                    | Yes                    |             135 |           43 |
+| Yes          | Yes                   | No                     |              12 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |                           Enable Signal                          |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/adrgenUnit_1/E[0]                                | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                2 |              7 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/automate_1/FSM_onehot_current_state_reg[12]_1[0] | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                3 |              8 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/automate_1/FSM_onehot_current_state_reg[10]_0[0] | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                4 |              8 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/automate_1/FSM_onehot_current_state_reg[11]_0[0] | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                3 |              8 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 |                                                                  | vga_inst1/eqOp10_in                             |                3 |             12 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | vga_inst1/eqOp10_in                                              | vga_inst1/v_cntr_reg0                           |                3 |             12 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | vga_inst1/S_enM_vga_region2                                      |                                                 |                4 |             14 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/automate_1/FSM_onehot_current_state_reg[12]_0[0] | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                3 |             14 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/automate_1/FSM_onehot_current_state_reg[3]_0[0]  | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                5 |             14 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | vga_inst1/S_adr_region1[13]_i_1_n_0                              | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                5 |             14 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | vga_inst1/S_adr_region2[13]_i_1_n_0                              | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                3 |             14 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 |                                                                  |                                                 |                7 |             16 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 |                                                                  | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |                9 |             20 |
+|  vga_inst1/Inst_clk_wiz_vga_25MHz/inst/clk_out1 | sobelProc_inst1/automate_1/FSM_onehot_current_state_reg[15]_0[0] | sobelProc_inst1/operativeUnit_1/regUnit_1/AR[0] |               15 |             48 |
++-------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+
