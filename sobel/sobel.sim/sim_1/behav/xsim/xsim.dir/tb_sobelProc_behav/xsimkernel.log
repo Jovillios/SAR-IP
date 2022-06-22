@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_sobelProc_behav/xsimk -simmode gui -wdb tb_sobelProc_behav.wdb -simrunnum 0 -socket 53215
+Running: xsim.dir/tb_sobelProc_behav/xsimk -simmode gui -wdb tb_sobelProc_behav.wdb -simrunnum 0 -socket 41221
 Design successfully loaded
-Design Loading Memory Usage: 33460 KB (Peak: 33580 KB)
-Design Loading CPU Usage: 10 ms
+Design Loading Memory Usage: 33564 KB (Peak: 33684 KB)
+Design Loading CPU Usage: 20 ms
 Simulation completed
-Simulation Memory Usage: 123396 KB (Peak: 172728 KB)
-Simulation CPU Usage: 20 ms
+Simulation Memory Usage: 123500 KB (Peak: 172832 KB)
+Simulation CPU Usage: 860 ms

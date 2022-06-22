@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-| Date             : Wed Jun  8 14:54:30 2022
+| Date             : Wed Jun 15 15:07:04 2022
 | Host             : fl-tp-br-429 running 64-bit Ubuntu 20.04.4 LTS
 | Command          : report_power -file sobelSys_power_routed.rpt -pb sobelSys_power_summary_routed.pb -rpx sobelSys_power_routed.rpx
 | Design           : sobelSys
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      877 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      386 |     63400 |            0.61 |
-|   CARRY4       |    <0.001 |       88 |     15850 |            0.56 |
-|   Register     |    <0.001 |      209 |    126800 |            0.16 |
+| Slice Logic    |    <0.001 |      888 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      389 |     63400 |            0.61 |
+|   CARRY4       |    <0.001 |       91 |     15850 |            0.57 |
+|   Register     |    <0.001 |      223 |    126800 |            0.18 |
 |   Others       |     0.000 |       16 |       --- |             --- |
-| Signals        |    <0.001 |      553 |       --- |             --- |
+| Signals        |    <0.001 |      566 |       --- |             --- |
 | Block RAM      |     0.001 |        5 |       135 |            3.70 |
 | MMCM           |     0.116 |        1 |         6 |           16.67 |
 | I/O            |    <0.001 |       17 |       210 |            8.10 |

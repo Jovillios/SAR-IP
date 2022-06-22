@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-| Date         : Wed Jun  8 14:53:08 2022
+| Date         : Wed Jun 15 15:05:53 2022
 | Host         : fl-tp-br-429 running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -file sobelSys_utilization_synth.rpt -pb sobelSys_utilization_synth.pb
 | Design       : sobelSys
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  418 |     0 |     63400 |  0.66 |
-|   LUT as Logic          |  418 |     0 |     63400 |  0.66 |
+| Slice LUTs*             |  422 |     0 |     63400 |  0.67 |
+|   LUT as Logic          |  422 |     0 |     63400 |  0.67 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  209 |     0 |    126800 |  0.16 |
-|   Register as Flip Flop |  209 |     0 |    126800 |  0.16 |
+| Slice Registers         |  223 |     0 |    126800 |  0.18 |
+|   Register as Flip Flop |  223 |     0 |    126800 |  0.18 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 17    |          Yes |           - |          Set |
-| 138   |          Yes |           - |        Reset |
+| 152   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 54    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -147,15 +147,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  275 |                 LUT |
-| FDCE     |  138 |        Flop & Latch |
-| CARRY4   |   88 |          CarryLogic |
-| LUT6     |   77 |                 LUT |
+| LUT2     |  277 |                 LUT |
+| FDCE     |  152 |        Flop & Latch |
+| CARRY4   |   91 |          CarryLogic |
+| LUT6     |   78 |                 LUT |
 | LUT3     |   73 |                 LUT |
-| LUT1     |   58 |                 LUT |
+| LUT1     |   61 |                 LUT |
 | FDRE     |   54 |        Flop & Latch |
-| LUT4     |   50 |                 LUT |
-| LUT5     |   32 |                 LUT |
+| LUT4     |   39 |                 LUT |
+| LUT5     |   31 |                 LUT |
 | FDPE     |   17 |        Flop & Latch |
 | OBUF     |   14 |                  IO |
 | RAMB36E1 |    5 |        Block Memory |

@@ -25,16 +25,16 @@ begin
 
 
   S_Pix11 <= STD_LOGIC_VECTOR(to_unsigned(15,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
-  S_Pix12 <= STD_LOGIC_VECTOR(to_unsigned(15,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
-  S_Pix13 <= STD_LOGIC_VECTOR(to_unsigned(15,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
+  S_Pix12 <= STD_LOGIC_VECTOR(to_unsigned(15,8)) , STD_LOGIC_VECTOR(to_unsigned(80,8)) after 200 ns;
+  S_Pix13 <= STD_LOGIC_VECTOR(to_unsigned(15,8)) , STD_LOGIC_VECTOR(to_unsigned(150,8)) after 200 ns;
   
   S_Pix21 <= STD_LOGIC_VECTOR(to_unsigned(80,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
-  S_Pix22 <= STD_LOGIC_VECTOR(to_unsigned(80,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
-  S_Pix23 <= STD_LOGIC_VECTOR(to_unsigned(80,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
+  S_Pix22 <= STD_LOGIC_VECTOR(to_unsigned(80,8)) , STD_LOGIC_VECTOR(to_unsigned(80,8)) after 200 ns;
+  S_Pix23 <= STD_LOGIC_VECTOR(to_unsigned(80,8)) , STD_LOGIC_VECTOR(to_unsigned(150,8)) after 200 ns;
   
   S_Pix31 <= STD_LOGIC_VECTOR(to_unsigned(150,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
-  S_Pix32 <= STD_LOGIC_VECTOR(to_unsigned(150,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
-  S_Pix33 <= STD_LOGIC_VECTOR(to_unsigned(150,8)) , STD_LOGIC_VECTOR(to_unsigned(15,8)) after 200 ns;
+  S_Pix32 <= STD_LOGIC_VECTOR(to_unsigned(150,8)) , STD_LOGIC_VECTOR(to_unsigned(80,8)) after 200 ns;
+  S_Pix33 <= STD_LOGIC_VECTOR(to_unsigned(150,8)) , STD_LOGIC_VECTOR(to_unsigned(150,8)) after 200 ns;
   
 
   gradientUnit_1 : entity work.gradientUnit

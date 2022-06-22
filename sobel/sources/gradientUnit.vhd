@@ -45,6 +45,7 @@ begin
 
 		
     end process;
+    
     Sum <= ('0'&abs(Gh)) + ('0'&abs(Gv));
 
     O_pixEdge <= '1' when Sum > 255 else '0';

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../sources/ip/clk_wiz_vga_25MHz" \
+"../../../../sources/ip/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz_clk_wiz.v" \
+"../../../../sources/ip/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,8 +1,9 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /usr/home/enstb1/Xilinx/Vivado2019.2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 6737922d63e140f3b9b38e0796d63452 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot tb_sobelProc_behav xil_defaultlib.tb_sobelProc -log elaborate.log 
+Running: /usr/home/enstb1/Xilinx/Vivado2019.2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 6737922d63e140f3b9b38e0796d63452 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_sobelProc_behav xil_defaultlib.tb_sobelProc xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
+Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -11,6 +12,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
 Compiling architecture behavioral of entity xil_defaultlib.regUnit [regunit_default]
 Compiling architecture behavioral of entity xil_defaultlib.gradientUnit [gradientunit_default]
 Compiling architecture behavioral of entity xil_defaultlib.pixedgeReg [pixedgereg_default]

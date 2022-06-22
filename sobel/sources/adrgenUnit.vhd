@@ -76,24 +76,25 @@ begin
         
             -- multiplexeur --
             if (I_selPix = "00") then
-               O_ADR_R <= std_logic_vector(Adr + to_unsigned(0,14));
+               O_ADR_R <= std_logic_vector(Adr_ter + to_unsigned(0,14));
             elsif (I_selPix = "01") then
-                O_ADR_R <= std_logic_vector(Adr + to_unsigned(100,14));
+                O_ADR_R <= std_logic_vector(Adr_ter + to_unsigned(100,14));
             elsif (I_selPix = "10") then
-                O_ADR_R <= std_logic_vector(Adr + to_unsigned(200,14));
+                O_ADR_R <= std_logic_vector(Adr_ter + to_unsigned(200,14));
             end if;
        
             
+            O_ADR_W <= std_logic_vector(Adr_ter + to_unsigned(99,14));
+
+
 
         end if;
         
-            Adr <= PtrCol;
-            Adr_bis <= (to_unsigned(100,7)*PtrLine);
-            Adr_ter <= Adr + Adr_bis;
-            
-            O_ADR_W <= std_logic_vector(Adr_ter + to_unsigned(99,14));
+              Adr_ter <= PtrCol + (to_unsigned(100,7)*PtrLine);  
         
     end process;
+    
+
 
 
 

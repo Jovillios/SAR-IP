@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 41440 
+INFO: Helper process launched with PID 58280 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1962.887 ; gain = 200.441 ; free physical = 8335 ; free virtual = 14246
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1962.859 ; gain = 201.441 ; free physical = 8804 ; free virtual = 14414
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'sobelSys' [/homes/t21khieu/SAR/sobel/sources/sobelSys.vhd:21]
 INFO: [Synth 8-638] synthesizing module 'sobelProc' [/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd:25]
@@ -27,23 +27,19 @@ INFO: [Synth 8-256] done synthesizing module 'regUnit' (1#1) [/homes/t21khieu/SA
 INFO: [Synth 8-638] synthesizing module 'gradientUnit' [/homes/t21khieu/SAR/sobel/sources/gradientUnit.vhd:15]
 INFO: [Synth 8-256] done synthesizing module 'gradientUnit' (2#1) [/homes/t21khieu/SAR/sobel/sources/gradientUnit.vhd:15]
 INFO: [Synth 8-638] synthesizing module 'pixedgeReg' [/homes/t21khieu/SAR/sobel/sources/pixedgeReg.vhd:16]
-WARNING: [Synth 8-614] signal 'I_ldPixEdge' is read in the process but is not in the sensitivity list [/homes/t21khieu/SAR/sobel/sources/pixedgeReg.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'pixedgeReg' (3#1) [/homes/t21khieu/SAR/sobel/sources/pixedgeReg.vhd:16]
 INFO: [Synth 8-256] done synthesizing module 'operativeUnit' (4#1) [/homes/t21khieu/SAR/sobel/sobel.srcs/sources_1/imports/sources/operativeUnit.vhd:21]
 INFO: [Synth 8-638] synthesizing module 'adrgenUnit' [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:22]
 WARNING: [Synth 8-614] signal 'PtrCol' is read in the process but is not in the sensitivity list [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:32]
 WARNING: [Synth 8-614] signal 'PtrLine' is read in the process but is not in the sensitivity list [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:32]
-WARNING: [Synth 8-614] signal 'Adr' is read in the process but is not in the sensitivity list [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:32]
-WARNING: [Synth 8-614] signal 'Adr_bis' is read in the process but is not in the sensitivity list [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:32]
-WARNING: [Synth 8-614] signal 'Adr_ter' is read in the process but is not in the sensitivity list [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:32]
 INFO: [Synth 8-256] done synthesizing module 'adrgenUnit' (5#1) [/homes/t21khieu/SAR/sobel/sources/adrgenUnit.vhd:22]
 INFO: [Synth 8-638] synthesizing module 'automate' [/homes/t21khieu/SAR/sobel/sources/automate.vhd:34]
 INFO: [Synth 8-256] done synthesizing module 'automate' (6#1) [/homes/t21khieu/SAR/sobel/sources/automate.vhd:34]
 INFO: [Synth 8-256] done synthesizing module 'sobelProc' (7#1) [/homes/t21khieu/SAR/sobel/sources/sobelProc.vhd:25]
 INFO: [Synth 8-3491] module 'vga_nexys4_2regions' declared at '/homes/t21khieu/SAR/sobel/sources/vga_nexys4_2regions.vhd:69' bound to instance 'vga_inst1' of component 'vga_nexys4_2regions' [/homes/t21khieu/SAR/sobel/sources/sobelSys.vhd:159]
 INFO: [Synth 8-638] synthesizing module 'vga_nexys4_2regions' [/homes/t21khieu/SAR/sobel/sources/vga_nexys4_2regions.vhd:93]
-INFO: [Synth 8-3491] module 'clk_wiz_vga_25MHz' declared at '/homes/t21khieu/SAR/sobel/sobel.runs/synth_1/.Xil/Vivado-41380-fl-tp-br-429/realtime/clk_wiz_vga_25MHz_stub.vhdl:5' bound to instance 'Inst_clk_wiz_vga_25MHz' of component 'clk_wiz_vga_25MHz' [/homes/t21khieu/SAR/sobel/sources/vga_nexys4_2regions.vhd:290]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_vga_25MHz' [/homes/t21khieu/SAR/sobel/sobel.runs/synth_1/.Xil/Vivado-41380-fl-tp-br-429/realtime/clk_wiz_vga_25MHz_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'clk_wiz_vga_25MHz' declared at '/homes/t21khieu/SAR/sobel/sobel.runs/synth_1/.Xil/Vivado-58224-fl-tp-br-429/realtime/clk_wiz_vga_25MHz_stub.vhdl:5' bound to instance 'Inst_clk_wiz_vga_25MHz' of component 'clk_wiz_vga_25MHz' [/homes/t21khieu/SAR/sobel/sources/vga_nexys4_2regions.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_vga_25MHz' [/homes/t21khieu/SAR/sobel/sobel.runs/synth_1/.Xil/Vivado-58224-fl-tp-br-429/realtime/clk_wiz_vga_25MHz_stub.vhdl:14]
 INFO: [Synth 8-256] done synthesizing module 'vga_nexys4_2regions' (8#1) [/homes/t21khieu/SAR/sobel/sources/vga_nexys4_2regions.vhd:93]
 	Parameter G_MemoryWidth bound to: 8 - type: integer 
 	Parameter G_MemoryDepth bound to: 10000 - type: integer 
@@ -83,7 +79,7 @@ WARNING: [Synth 8-3331] design gradientUnit has unconnected port I_Pix22[2]
 WARNING: [Synth 8-3331] design gradientUnit has unconnected port I_Pix22[1]
 WARNING: [Synth 8-3331] design gradientUnit has unconnected port I_Pix22[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2039.637 ; gain = 277.191 ; free physical = 8349 ; free virtual = 14264
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2039.609 ; gain = 278.191 ; free physical = 8826 ; free virtual = 14436
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -96,12 +92,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2051.512 ; gain = 289.066 ; free physical = 8346 ; free virtual = 14260
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2051.484 ; gain = 290.066 ; free physical = 8826 ; free virtual = 14435
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2051.512 ; gain = 289.066 ; free physical = 8346 ; free virtual = 14260
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2051.484 ; gain = 290.066 ; free physical = 8826 ; free virtual = 14435
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2051.512 ; gain = 0.000 ; free physical = 8339 ; free virtual = 14253
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2051.484 ; gain = 0.000 ; free physical = 8817 ; free virtual = 14427
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -115,20 +111,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/sobelSys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2216.293 ; gain = 0.000 ; free physical = 8239 ; free virtual = 14170
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.266 ; gain = 0.000 ; free physical = 8729 ; free virtual = 14339
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2216.293 ; gain = 0.000 ; free physical = 8239 ; free virtual = 14170
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2215.266 ; gain = 0.000 ; free physical = 8730 ; free virtual = 14339
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8308 ; free virtual = 14240
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8797 ; free virtual = 14407
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8308 ; free virtual = 14240
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8797 ; free virtual = 14407
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -137,7 +133,7 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk_i. (constraint file  /homes/t
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_i. (constraint file  /homes/t21khieu/SAR/sobel/sources/ip/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz/clk_wiz_vga_25MHz_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for vga_inst1/Inst_clk_wiz_vga_25MHz. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8307 ; free virtual = 14239
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8797 ; free virtual = 14407
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'automate'
 INFO: [Synth 8-5546] ROM "O_StartDisplay" won't be mapped to RAM because it is too sparse
@@ -172,7 +168,7 @@ INFO: [Synth 8-5546] ROM "O_ldPix11" won't be mapped to RAM because it is too sp
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'automate'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8291 ; free virtual = 14224
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8778 ; free virtual = 14388
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -185,13 +181,13 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     14 Bit       Adders := 4     
+	   2 Input     14 Bit       Adders := 5     
 	   2 Input     11 Bit       Adders := 1     
 	   7 Input     10 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               14 Bit    Registers := 6     
+	               14 Bit    Registers := 7     
 	                8 Bit    Registers := 10    
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
@@ -243,10 +239,10 @@ Detailed RTL Component Info :
 Module adrgenUnit 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     14 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 3     
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               14 Bit    Registers := 2     
+	               14 Bit    Registers := 3     
 	                7 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
@@ -308,7 +304,7 @@ INFO: [Synth 8-6430] The Block RAM "sobelSys/ram_out/RAM_reg" may get memory col
 INFO: [Synth 8-4652] Swapped enable and write-enable on 4 RAM instances of RAM ram_out/RAM_reg to conserve power
 RAM Pipeline Warning: Read Address Register Found For RAM ram_out/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8269 ; free virtual = 14210
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8764 ; free virtual = 14379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -344,13 +340,13 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clk_i'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8138 ; free virtual = 14088
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8642 ; free virtual = 14257
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8133 ; free virtual = 14083
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8637 ; free virtual = 14252
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -382,7 +378,7 @@ INFO: [Synth 8-7053] The timing for the instance rom_in/O_dout_reg_2 (implemente
 INFO: [Synth 8-7053] The timing for the instance rom_in/O_dout_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance ram_out/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8635 ; free virtual = 14251
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -406,13 +402,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14245
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14245
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -431,25 +427,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14244
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14244
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14244
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14244
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -467,19 +463,19 @@ Report Cell Usage:
 |      |Cell                     |Count |
 +------+-------------------------+------+
 |1     |clk_wiz_vga_25MHz_bbox_0 |     1|
-|2     |CARRY4                   |    88|
-|3     |LUT1                     |    58|
-|4     |LUT2                     |   275|
+|2     |CARRY4                   |    91|
+|3     |LUT1                     |    61|
+|4     |LUT2                     |   277|
 |5     |LUT3                     |    73|
-|6     |LUT4                     |    50|
-|7     |LUT5                     |    32|
-|8     |LUT6                     |    77|
+|6     |LUT4                     |    39|
+|7     |LUT5                     |    31|
+|8     |LUT6                     |    78|
 |9     |RAMB36E1                 |     1|
 |10    |RAMB36E1_1               |     1|
 |11    |RAMB36E1_2               |     1|
 |12    |RAMB36E1_3               |     1|
 |13    |RAMB36E1_4               |     1|
-|14    |FDCE                     |   138|
+|14    |FDCE                     |   152|
 |15    |FDPE                     |    17|
 |16    |FDRE                     |    54|
 |17    |IBUF                     |     2|
@@ -490,11 +486,11 @@ Report Instance Areas:
 +------+---------------------+-----------------------------+------+
 |      |Instance             |Module                       |Cells |
 +------+---------------------+-----------------------------+------+
-|1     |top                  |                             |   885|
+|1     |top                  |                             |   896|
 |2     |  ram_out            |DualPortRamGeneric           |     2|
 |3     |  rom_in             |SinglePortROMFileInitGeneric |     4|
-|4     |  sobelProc_inst1    |sobelProc                    |   376|
-|5     |    adrgenUnit_1     |adrgenUnit                   |   112|
+|4     |  sobelProc_inst1    |sobelProc                    |   387|
+|5     |    adrgenUnit_1     |adrgenUnit                   |   123|
 |6     |    automate_1       |automate                     |    65|
 |7     |    operativeUnit_1  |operativeUnit                |   199|
 |8     |      gradientUnit_1 |gradientUnit                 |    45|
@@ -503,28 +499,28 @@ Report Instance Areas:
 |11    |  vga_inst1          |vga_nexys4_2regions          |   473|
 +------+---------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8132 ; free virtual = 14082
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8628 ; free virtual = 14244
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 2216.293 ; gain = 289.066 ; free physical = 8186 ; free virtual = 14136
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 2216.293 ; gain = 453.848 ; free physical = 8186 ; free virtual = 14136
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 2215.266 ; gain = 290.066 ; free physical = 8681 ; free virtual = 14297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 2215.266 ; gain = 453.848 ; free physical = 8682 ; free virtual = 14299
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2216.293 ; gain = 0.000 ; free physical = 8252 ; free virtual = 14202
-INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.266 ; gain = 0.000 ; free physical = 8749 ; free virtual = 14365
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2216.293 ; gain = 0.000 ; free physical = 8202 ; free virtual = 14153
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.266 ; gain = 0.000 ; free physical = 8707 ; free virtual = 14313
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 2216.293 ; gain = 697.375 ; free physical = 8338 ; free virtual = 14288
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2216.293 ; gain = 0.000 ; free physical = 8338 ; free virtual = 14288
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 2215.266 ; gain = 695.406 ; free physical = 8842 ; free virtual = 14448
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.266 ; gain = 0.000 ; free physical = 8842 ; free virtual = 14448
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/homes/t21khieu/SAR/sobel/sobel.runs/synth_1/sobelSys.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file sobelSys_utilization_synth.rpt -pb sobelSys_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jun  8 14:53:08 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 15 15:05:53 2022...

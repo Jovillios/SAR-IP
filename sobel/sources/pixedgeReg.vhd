@@ -24,8 +24,10 @@ begin
     if reset = '1' then
         O_pixEdge <= '0';
     else
-	   if (rising_edge(clk) and (I_ldPixEdge = '1') ) then
-	       O_pixEdge <= I_pixEdge;
+	   if (rising_edge(clk)) then
+	       if (I_ldPixEdge = '1') then 
+	           O_pixEdge <= I_pixEdge;
+	       end if;
 	   end if;
 	end if;
 	end process;

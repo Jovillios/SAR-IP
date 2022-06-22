@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="clk_wiz_vga_25MHz_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1620110989">
-  <File Type="RDS-UTIL-PB" Name="clk_wiz_vga_25MHz_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="clk_wiz_vga_25MHz_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="clk_wiz_vga_25MHz_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="clk_wiz_vga_25MHz.vds"/>
   <File Type="RDS-DCP" Name="clk_wiz_vga_25MHz.dcp"/>
   <File Type="PA-TCL" Name="clk_wiz_vga_25MHz.tcl"/>

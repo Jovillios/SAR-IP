@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/DualPortRamGeneric.vhd" \
+"../../../../sources/SinglePortROMFileInitGeneric.vhd" \
+"../../../../sources/adrgenUnit.vhd" \
+"../../../../sources/automate.vhd" \
+"../../../../sources/gradientUnit.vhd" \
+"../../../../sources/regUnit.vhd" \
+"../../../../sources/pixedgeReg.vhd" \
+"../../../../sobel.srcs/sources_1/imports/sources/operativeUnit.vhd" \
+"../../../../sources/sobelProc.vhd" \
+"../../../../sources/sobelSys.vhd" \
+"../../../../sources/vga_nexys4_2regions.vhd" \
+"../../../../sources/tb_sobelSys.vhd" \
+
+# Do not sort compile order
+nosort
